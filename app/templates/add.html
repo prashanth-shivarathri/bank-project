@@ -1,0 +1,17 @@
+{% extends 'main.html' %}
+{% block content %}
+    <form action="" method="POST">
+        {% csrf_token %}
+        <h1>add balance </h1>
+        <label for="">account</label>
+        <input type="number" name="account" id="" > <br> <br>
+        <label for="">pin</label>
+        <input type="number" name="pin" id="" > <br> <br>
+        <label for="">balance</label>
+        <input type="number" name="balance" id="" > <br> <br>
+        <button type="submit">SUBMIT</button>
+        <h1>balance</h1>
+       <h1> {{bal}}</h1>
+        </form>
+    
+    {% endblock content %}

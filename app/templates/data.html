@@ -1,0 +1,20 @@
+{% extends 'main.html' %}
+{% block content %}
+    <!-- <div><h1>data</h1>
+        {% for i in data %}
+    <a  href="{% url 'edit' i.pk %}"><h1>{{i.name}}</h1></a>
+    <a  href="{% url 'edit' i.pk %}"><h1>{{i.des}}</h1></a></div>
+{% endfor %} -->
+<form action="" method="POST">
+    {% csrf_token %}
+    <h1>pin</h1>
+    <label for="">account</label>
+    <input type="number" name="account" id="" > <br> <br>
+    <label for="">pin</label>
+    <input type="number" name="pin" id="" value="{data.pin}"> <br> <br>
+    <button type="submit">SUBMIT</button>
+    <!-- <h1>Current balance </h1>
+    <h1>{{bal}}</h1> -->
+    {{balance}}
+    </form>
+{% endblock content %}

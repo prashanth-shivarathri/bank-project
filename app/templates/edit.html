@@ -1,0 +1,12 @@
+{% extends 'main.html' %}
+{% block content %}
+    <form action="" method="POST">
+        {% csrf_token %}
+        <h4>PIN CREATED</h4>
+        <label for="">account</label>
+        <input type="number" name="account" id="" value="{{data.account}}"> <br> <br>
+        <label for="">pin</label>
+        <input type="number" name="pin" id="" value="{{data.pin}}"> <br> <br>
+        <button type="submit">SUBMIT</button>
+        </form>
+        {% endblock content %}

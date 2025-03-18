@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <style>
+          h1{
+               text-align: center;
+               list-style: none;
+          }
+          form{
+               margin-left: 40%;
+               background-image: url("https://cdn.pixabay.com/photo/2020/05/19/09/21/flower-5189902_1280.jpg");
+               box-shadow: 10px 10px 10px rgb(252, 91, 222);
+               width: 30%;
+               padding: 10px;
+               border-radius: 15px;
+               background-size: cover;
+          }
+     </style>
+</head>
+<body>
+     {% include 'nav.html' %}
+     {% block content %}
+
+     {% endblock content %} 
+     {% include 'footer.html' %}
+</body>
+</html>
